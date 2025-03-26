@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Boldonse", system-ui;
+}
+
+.rochester-regular {
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100%;
+}
+
+.main-container nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(238, 188, 95);
+}
+
+.main-container nav .logo h1 {
+    font-size: 46px;
+    font-weight: 400;
+    margin-left: 70px;
+}
+
+.main-container nav .content ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.main-container nav .content ul li a {
+    font-size: 12px;
+    opacity: 0.7;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 50px;
+}
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; 
+    position: relative; 
+  }
+  
+  .hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+    display: block; 
+  }
+  
+  .hero-section img {
+    filter: brightness(0.9); 
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-section:hover img {
+    transform: scale(1.02); 
+  }
