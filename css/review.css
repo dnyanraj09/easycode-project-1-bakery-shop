@@ -278,11 +278,17 @@ footer {
 }
 
 /* (phones) */
-@media screen and (max-width: 600px) {
+@media (max-width: 575px) {
     nav {
         flex-direction: column;
         height: auto;
         padding: 10px 0;
+        text-align: center;
+    }
+
+    nav .logo h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
     }
 
     nav .content ul {
@@ -291,39 +297,71 @@ footer {
     }
 
     nav .content ul li {
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
     .hero-text h2 {
         font-size: 2rem;
     }
 
+    .hero-text p {
+        font-size: 1rem;
+    }
+
     .review-container {
         flex-direction: column;
         align-items: center;
+        padding: 20px;
     }
-
+    
     .review-card {
-        width: 90%;
-    }
-
-    .rating-container {
-        padding: 10px;
-    }
-
-    .feedback-recent {
-        flex-direction: column;
+        height: 50%;
+        width: 50%;
+        padding: 15px;
+        flex-direction: row;
         align-items: center;
     }
 
-    .feedback-1, .review-form {
-        width: 90%;
+    .review-card img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .review-card h3 {
+        font-size: 16px;
+    }
+    
+    .review-text {
+        font-size: 12px;
+    }
+    
+   .stars {
+        font-size: 18px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .review-form {
+        width: 90vw;
+    }
+
+    .feedback-recent {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .feedback-1 {
+        width: 90vw;
+    }
+
+    .rating-1 h1 {
+        font-size: 2rem;
     }
 
     .footer-content {
         flex-direction: column;
+        align-items: center;
         text-align: center;
-        justify-content: center;
     }
 
     .footer-section {
@@ -335,9 +373,104 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+
+    .social-icons a {
+        margin: 10px;
+    }
 }
 
-/* (tablets) */
+@media (min-width: 576px) {
+    nav {
+        height: 70px;
+        padding: 0 30px;
+    }
+
+    nav .logo h1 {
+        font-size: 32px;
+    }
+
+    nav .content ul li {
+        margin-right: 25px;
+    }
+
+    nav .content ul li a {
+        font-size: 16px;
+    }
+
+    .hero-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.3rem;
+    }
+
+    .review-container {
+        gap: 25px;
+        padding: 50px;
+    }
+
+    .review-card {
+        width: 45%;
+        padding: 20px;
+    }
+
+    .review-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .review-card h3 {
+        font-size: 18px;
+    }
+
+    .review-text {
+        font-size: 14px;
+    }
+
+    .stars {
+        font-size: 22px;
+    }
+
+    .review-form {
+        width: 70vw;
+        padding: 25px;
+    }
+
+    .review-form input, .review-form textarea {
+        padding: 12px;
+    }
+
+    .feedback-recent {
+        gap: 30px;
+    }
+
+    .feedback-1 {
+        width: 70vw;
+        padding: 25px;
+    }
+
+    .rating-1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .footer-content {
+        justify-content: space-between;
+    }
+
+    .footer-section {
+        width: 30%;
+    }
+
+    .footer-bottom {
+        padding: 20px 30px;
+    }
+
+    .social-icons a {
+        font-size: 1.4rem;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .hero-text h2 {
         font-size: 2.5rem;
@@ -378,15 +511,5 @@ footer {
     .footer-bottom {
         flex-direction: column;
         text-align: center;
-    }
-}
-/* desktop*/
-@media screen and (max-width: 1200px) {
-    .review-card {
-        width: 30%;
-    }
-
-    .footer-section {
-        width: 22%;
     }
 }
