@@ -102,7 +102,7 @@ nav .content ul li a {
 
 .review-card {
     width: 300px;
-    background: white;
+    background: rgb(170, 119, 119);
     padding: 20px;
     border-radius: 10px;
     flex-wrap: wrap;
@@ -193,7 +193,7 @@ nav .content ul li a {
 
 .feedback-1 {
     width: 50vw;
-    background: white;
+    background: rgb(170, 119, 119);
     color: black;
     padding: 20px;
     border-radius: 10px;
