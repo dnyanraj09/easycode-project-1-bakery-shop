@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Boldonse", system-ui;
+    font-family: "Bodoni Moda", serif;
 }
 
 .rochester-regular {
@@ -14,61 +14,320 @@
     font-style: normal;
 }
 
+body {
+    background-color: #fff9f0;
+}
+
 .main-container {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
-.main-container nav {
-    height: 50px;
+nav {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(238, 188, 95);
-}
-
-.main-container nav .logo h1 {
-    font-size: 46px;
-    font-weight: 400;
-    margin-left: 70px;
-}
-
-.main-container nav .content ul {
-    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    background-color: rgb(238, 188, 95);
+    padding: 15px 50px;
+    position: fixed;
+    z-index: 1000; 
+
+}
+
+nav .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav .logo h1 {
+    font-size: 46px;
+    font-weight: 400;
+}
+
+.nav-links {
+    width: 100%;
+}
+
+.nav-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #fff;
+}
+
+.hero-section {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-text h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: rgb(238, 188, 95);
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    transform: translateY(-3px);
+}
+
+.welcome-section {
+    display: flex;
+    padding: 80px 50px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #33333362;
+}
+
+.welcome-content {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.welcome-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.welcome-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.welcome-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.icon-item {
+    text-align: center;
+}
+
+.icon-item i {
+    font-size: 2.5rem;
+    color: rgb(238, 188, 95);
+    margin-bottom: 10px;
+}
+
+.icon-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.welcome-image {
+    width: 50%;
+}
+
+.welcome-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 50px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-section {
+    width: 23%;
+}
+
+.footer-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: rgb(238, 188, 95);
+}
+
+.footer-section p, .footer-section ul li {
+    margin-bottom: 10px;
+    color: #ddd;
+    font-size: 0.9rem;
+}
+
+.footer-section ul {
     list-style: none;
 }
 
-.main-container nav .content ul li a {
-    font-size: 12px;
-    opacity: 0.7;
-    color: black;
-    cursor: pointer;
+.footer-section ul li a {
+    color: #ddd;
     text-decoration: none;
-    margin-right: 50px;
+    transition: color 0.3s ease;
 }
-.hero-section {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden; 
-    position: relative; 
-  }
-  
-  .hero-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    object-position: center; 
-    display: block; 
-  }
-  
-  .hero-section img {
-    filter: brightness(0.9); 
-    transition: transform 0.3s ease;
-  }
-  
-  .hero-section:hover img {
-    transform: scale(1.02); 
-  }
+
+.footer-section ul li a:hover {
+    color: rgb(238, 188, 95);
+}
+
+.footer-section i {
+    margin-right: 10px;
+    color: rgb(238, 188, 95);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-left: 15px;
+    color: #ddd;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: rgb(238, 188, 95);
+}
+
+@media (min-width: 769px) {
+    nav {
+        flex-wrap: nowrap;
+        height: 80px;
+    }
+    
+    nav .logo {
+        width: auto;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    
+    .nav-links {
+        width: auto;
+    }
+    
+    .nav-links ul {
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        gap: 0;
+    }
+    
+    .nav-links ul li {
+        margin: 0 15px;
+        
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        width: 95%;
+    }
+    
+    .welcome-section {
+        flex-direction: column;
+    }
+    
+    .welcome-content, .welcome-image {
+        width: 100%;
+        padding-right: 0;
+    }
+   
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 15px 20px;
+    }
+   
+    nav .logo h1 {
+        font-size: 2rem;
+    }
+    nav .nav-links ul li a{
+        font-size: 12px;
+    }
+    .hero-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .btn {
+        padding: 0.6rem 1.5rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-section {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .social-icons {
+        margin-top: 1rem;
+    }
+}
