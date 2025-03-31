@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Boldonse", system-ui;
+    background:linear-gradient(to top, pink,#b7a9ab);
+}
+
+header {
+    background-color: #a24a58;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+h1{
+     font-size: 4em;
+     text-align: center; 
+     color:#a24a58;
+     font-family:"Rochester", system-ui; 
+}
+
+.hero button{
+    height: 45px;
+    width: 200px;
+    background: chocolate;
+}
+
+.hero button:hover{
+    cursor: pointer;
+    background-color: #833b47;
+}
+
+.gallery{
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.gallery-item img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+    padding: 5px;
+  
+   
+}
+
+.gallery-item p{
+    height: 20px;
+    width: 20px;
+    color: #550f0f;
+    font-weight: 1000;
+    text-align: center;
+}
+
+
+.gallery-item img:hover{
+    transform: scale(1.1);
+}
+
+.gallery::-webkit-scrollbar{
+    height: 5px;
+}
+
+.gallery::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 10px;
+}
+
+.middle-gallery{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.middle-galleryitem img{
+    height: 500px;
+    width: 500px;
+    margin: 8vh 2vw;
+    border-radius: 35%;
+    background-color: #7c3e49;
+    padding:5px;
+}
+
+
+
+.middle-galleryright img{
+    height: 500px;
+    width: 500px;
+    background-color: #7c3e49;
+    margin: 8vh 2vw;
+    border-radius: 35%;
+    padding:5px;
+   
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #f8d5e0;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+h2{
+    font-weight: 50;
+}
+
+.product {
+    background: #d89292;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
