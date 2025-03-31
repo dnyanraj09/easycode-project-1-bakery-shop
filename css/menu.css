@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bodoni Moda", serif;
+}
+
+.rochester-regular {
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(238, 188, 95);
+}
+
+body {
+    background-color: #111;
+    color: #eee;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    border-bottom: 1px solid rgb(238, 188, 95);
+}
+
+header h1 {
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-style: italic;
+    color: rgb(238, 188, 95);
+    font-size: 1.2rem;
+}
+
+.category-nav {
+    margin-bottom: 40px;
+    position: sticky;
+    top: 0;
+    background-color: #111;
+    z-index: 100;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+
+.category-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-nav a {
+    color: rgb(238, 188, 95);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.category-nav a:hover {
+    background-color: rgb(238, 188, 95);
+    color: #111;
+}
+
+.menu-category {
+    margin-bottom: 50px;
+    scroll-margin-top: 80px;
+}
+
+.menu-category h2 {
+    color: rgb(238, 188, 95);
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(238, 188, 95);
+}
+
+.menu-items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.menu-item {
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(238, 188, 95, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid rgb(238, 188, 95);
+}
+
+.item-details {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item h3 {
+    color: rgb(238, 188, 95);
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.menu-item p {
+    color: #ccc;
+    font-style: italic;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.price {
+    color: rgb(238, 188, 95);
+    font-weight: bold;
+    font-size: 1.3rem;
+    align-self: flex-end;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid rgb(238, 188, 95);
+    color: #aaa;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3.5rem;
+    }
+    
+    .menu-items-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-nav ul {
+        gap: 10px;
+    }
+    
+    .category-nav a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
