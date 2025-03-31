@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bodoni Moda", serif;
+}
+
+.rochester-regular {
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-container {
+    width: 100%;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(238, 188, 95);
+    padding: 0 20px;
+}
+
+nav .logo h1 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+nav .content ul {
+    display: flex;
+    list-style: none;
+}
+
+nav .content ul li {
+    margin-right: 20px;
+}
+
+nav .content ul li a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero-section {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+.f2{
+    font-family: "Anton", sans-serif;
+
+}
+.f1{
+    font-family: "Dancing Script", cursive;
+    font-weight:bolder;
+    font-size: 40px;
+}
+
+.hero-section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background: #f9f9f9;
+}
+
+.review-card {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review-card h3 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.review-text {
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: gold;
+    font-size: 20px;
+}
+
+.review-form {
+    width: 50vw;
+    background: rgb(90, 22, 22);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.review-form input, .review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.review-form button {
+    width: 100%;
+    padding: 10px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.review-form button:hover {
+    background: #e6b800;
+}
+
+.rating-container {
+    width: 100%;
+    padding: 15px;
+    background: rgba(46, 7, 7, 0.9);
+    color: rgb(244, 240, 240);
+    text-align: center;
+}
+
+.rating-1{
+    background: rgb(107, 82, 49);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.rating-1 h1 {
+    font-size: 3rem;
+    color: #ffcc00;
+}
+
+.feedback-recent {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feedback-1 {
+    width: 50vw;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.feedback img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 50px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-section {
+    width: 23%;
+}
+
+.footer-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: rgb(238, 188, 95);
+}
+
+.footer-section p, .footer-section ul li {
+    margin-bottom: 10px;
+    color: #ddd;
+    font-size: 0.9rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: rgb(238, 188, 95);
+}
+
+.footer-section i {
+    margin-right: 10px;
+    color: rgb(238, 188, 95);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-left: 15px;
+    color: #ddd;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: rgb(238, 188, 95);
+}
+
+/* (phones) */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    nav .content ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .content ul li {
+        margin: 10px 0;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .review-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card {
+        width: 90%;
+    }
+
+    .rating-container {
+        padding: 10px;
+    }
+
+    .feedback-recent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feedback-1, .review-form {
+        width: 90%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* (tablets) */
+@media screen and (max-width: 900px) {
+    .hero-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .review-container {
+        gap: 15px;
+    }
+
+    .review-card {
+        width: 45%;
+    }
+
+    .rating-container {
+        padding: 20px;
+    }
+
+    .feedback-recent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feedback-1, .review-form {
+        width: 80%;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* desktop*/
+@media screen and (max-width: 1200px) {
+    .review-card {
+        width: 30%;
+    }
+
+    .footer-section {
+        width: 22%;
+    }
+}
