@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -55,15 +53,6 @@ nav .content ul li a {
     width: 100%;
     position: relative;
 }
-.f2{
-    font-family: "Anton", sans-serif;
-
-}
-.f1{
-    font-family: "Dancing Script", cursive;
-    font-weight:bolder;
-    font-size: 40px;
-}
 
 .hero-section img {
     height: 100%;
@@ -84,11 +73,13 @@ nav .content ul li a {
 .hero-text h2 {
     font-size: 3rem;
     margin-bottom: 10px;
+    color: #000000;
 }
 
 .hero-text p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    
 }
 
 .review-container {
@@ -102,12 +93,13 @@ nav .content ul li a {
 
 .review-card {
     width: 300px;
-    background: rgb(170, 119, 119);
+    background: linear-gradient(135deg, rgb(170, 119, 119), rgb(238, 188, 95)); /* Gradient background */
     padding: 20px;
     border-radius: 10px;
     flex-wrap: wrap;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: rgb(14, 12, 12); 
+    border: 1.5px solid white;
 }
 
 .review-card img {
@@ -118,6 +110,7 @@ nav .content ul li a {
 }
 
 .review-card h3 {
+    color:white;
     margin: 5px 0;
     font-size: 18px;
 }
@@ -136,10 +129,12 @@ nav .content ul li a {
 
 .review-form {
     width: 50vw;
-    background: rgb(81, 44, 44);
+    background: linear-gradient(135deg, rgb(170, 119, 119), rgb(238, 188, 95)); /* Gradient background */
     padding: 20px;
     border-radius: 10px;
     text-align: left;
+    border: 1.5px solid white;
+
 }
 
 .review-form input, .review-form textarea {
@@ -148,17 +143,19 @@ nav .content ul li a {
     margin-top: 5px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    border:1.0px solid black ;
 }
 
 .review-form button {
     width: 30%;
     padding: 10px;
     background: #ffcc00;
-    border: none;
     border-radius: 20px;
     margin-top: 10px;
     cursor: pointer;
     font-size: 1.1em;
+    border: 1.0px solid black;
+
 }
 
 .review-form button:hover {
@@ -175,9 +172,11 @@ nav .content ul li a {
 
 .rating-1{
     background: rgb(81, 44, 44);
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 30px;
     margin-bottom: 20px;
+    border: 0.5px solid white;
+
 }
 
 .rating-1 h1 {
@@ -193,11 +192,13 @@ nav .content ul li a {
 
 .feedback-1 {
     width: 50vw;
-    background: rgb(170, 119, 119);
+    background: linear-gradient(135deg, rgb(170, 119, 119), rgb(238, 188, 95)); /* Gradient background */
     color: black;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    border: 1.5px solid white;
+
 }
 
 .feedback img {
