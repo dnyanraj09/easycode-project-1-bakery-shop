@@ -93,7 +93,7 @@ nav .content ul li a {
 
 .review-card {
     width: 300px;
-    background: linear-gradient(135deg, rgb(170, 119, 119), rgb(238, 188, 95)); /* Gradient background */
+    background: linear-gradient(135deg, rgb(170, 119, 119), rgb(238, 188, 95));
     padding: 20px;
     border-radius: 10px;
     flex-wrap: wrap;
@@ -129,7 +129,7 @@ nav .content ul li a {
 
 .review-form {
     width: 50vw;
-    background: linear-gradient(135deg, rgb(170, 119, 119), rgb(238, 188, 95)); /* Gradient background */
+    background: linear-gradient(135deg, rgb(170, 119, 119), rgb(238, 188, 95)); 
     padding: 20px;
     border-radius: 10px;
     text-align: left;
@@ -192,7 +192,7 @@ nav .content ul li a {
 
 .feedback-1 {
     width: 50vw;
-    background: linear-gradient(135deg, rgb(170, 119, 119), rgb(238, 188, 95)); /* Gradient background */
+    background: linear-gradient(135deg, rgb(170, 119, 119), rgb(238, 188, 95)); 
     color: black;
     padding: 20px;
     border-radius: 10px;
